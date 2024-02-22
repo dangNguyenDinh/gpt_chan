@@ -10,5 +10,5 @@ setInterval(()=>{
             a[i].textContent = "Hinata chan";
         }
     }
-}, 200)
+}, 1000)
 
