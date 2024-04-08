@@ -1,4 +1,4 @@
-# gpt chan
+# name your GPT
 
 
 only the name
