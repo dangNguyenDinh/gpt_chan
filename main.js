@@ -1,7 +1,3 @@
-//background
-document.querySelectorAll(".h-full")[10].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
-document.querySelectorAll(".h-full")[11].style.backgroundSize = 'cover';
-document.querySelectorAll(".sticky")[1].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
 //name  
 console.log("start");
 var canExec = 0;
@@ -27,7 +23,11 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
         console.log(canExec);
         if (canExec >= 2) {
             setInterval(() => {
-                
+                //background
+                document.querySelectorAll(".h-full")[10].style.backgroundImage = "url('https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg')";
+                document.querySelectorAll(".h-full")[11].style.backgroundSize = "cover";
+                document.querySelectorAll(".sticky")[1].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
+
                 //ảnh gpt
                 var iconsm = document.querySelectorAll(".icon-sm");
                 for (var i = 0; i < iconsm.length; i++) {
