@@ -1,4 +1,8 @@
-
+//background
+document.querySelectorAll(".h-full")[10].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
+document.querySelectorAll(".h-full")[11].style.backgroundSize = 'cover';
+document.querySelectorAll(".sticky")[1].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
+//name  
 console.log("start");
 var canExec = 0;
 //nút newchat
@@ -59,6 +63,21 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
     }
 })
 
+
+
+    // var background = document.createElement("div");
+    // var img = document.createElement("img");
+    // img.src = "https://i.pinimg.com/736x/66/f5/cf/66f5cf306d1690f29cc465d4e69ecc7f.jpg";
+    // img.alt = "#";
+    // img.style.width = "100vw";
+    // background.appendChild(img);
+    // background.style.opacity = '0.3';
+    // background.style.position = 'fixed';
+    // background.style.width = '100vw';
+    // background.style.height = '100vh';
+    // background.style.top = '0';
+    // background.style.zIndex = '-1';
+    // document.querySelector("body").appendChild(background);
 
 // const e = new KeyboardEvent('keydown', {
 //     bubbles: true,
