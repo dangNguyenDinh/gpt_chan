@@ -3,5 +3,4 @@
 chịu khó ấn tầm 2, 3 câu hỏi với GPT đi
 <br>
 only the name
-(hiện tại tiện ích đang sửa chữa)
-update xong bên brand update1
+update 22/4/2024

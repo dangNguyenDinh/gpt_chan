@@ -1,4 +1,6 @@
+document.getElementById("__next").style.fontFamily = "Tahoma";
 
+//name  
 console.log("start");
 var canExec = 0;
 //nút newchat
@@ -23,38 +25,27 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
         console.log(canExec);
         if (canExec >= 2) {
             setInterval(() => {
-                // document.querySelectorAll(".gizmo-shadow-stroke").forEach((i)=>{
-                //     if(i.textContent.includes("ChatGPT")){
-                //         i.innerHTML = `<img src="https://i.pinimg.com/originals/b2/7a/cb/b27acbb6bbaad9788ebf9ae8c17ca357.jpg" alt="#">`
-                //     }
-                //     if(i.textContent.includes("You") || i.textContent.includes("You")){
-                //         i.innerHTML = `<img src="https://pm1.aminoapps.com/6736/3fbaea905ca7aa1b28498ac082f440fe902af8a9v2_hq.jpg" alt="#">`
-                //     }
-                // })
-                var a1 = document.querySelectorAll(".font-semibold");
-                var a = document.querySelectorAll(".gap-3.text-base");
-                for (var i = 0; i < a.length; i++) {
-                    if(a[i].querySelector(".font-semibold").textContent.includes("ChatGPT")){
-                        a[i].querySelector(".gizmo-shadow-stroke").innerHTML = `<img src="https://i.pinimg.com/originals/b2/7a/cb/b27acbb6bbaad9788ebf9ae8c17ca357.jpg" alt="#">`
-                        a1[i].textContent = "Obito";
-                }
-                    if(a[i].querySelector(".font-semibold").textContent.includes("You")){
-                        a[i].querySelector(".gizmo-shadow-stroke").innerHTML = `<img src="https://pm1.aminoapps.com/6736/3fbaea905ca7aa1b28498ac082f440fe902af8a9v2_hq.jpg" alt="#">`
-                        a1[i].textContent = "Rin";
+                //background
+                document.querySelectorAll(".h-full")[10].style.backgroundImage = "url('https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg')";
+                document.querySelectorAll(".h-full")[11].style.backgroundSize = "cover";
+                document.querySelectorAll(".sticky")[1].style.backgroundImage = "url(https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg)";
+
+                //ảnh gpt
+                var iconsm = document.querySelectorAll(".icon-sm");
+                for (var i = 0; i < iconsm.length; i++) {
+                    if(iconsm[i].parentNode.textContent.includes("ChatGPT")){
+                        iconsm[i].parentNode.parentNode.innerHTML = `<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnRyY6iVV7oCsNl-Jqz858LYty_oiafLQ9zAyjW1PIqQ&s" alt="#">`;
                     }
                 }
 
-
-                // var a = document.querySelectorAll(".gizmo-shadow-stroke")
-                // for (var i = 0; i < a.length; i++) {
-                //     if (a[i].textContent.includes("ChatGPT")) {
-                //         a[i].innerHTML = `<img src="https://i.pinimg.com/originals/b2/7a/cb/b27acbb6bbaad9788ebf9ae8c17ca357.jpg" alt="#">`
-                //     }
-                //     if (a[i].textContent.includes("You")) {
-                //         a[i].innerHTML = `<img src="https://pm1.aminoapps.com/6736/3fbaea905ca7aa1b28498ac082f440fe902af8a9v2_hq.jpg" alt="#">`
-                //     }
-                // }
-                //tên gpt
+                //ảnh người dùng
+                var fontsemibold = document.querySelectorAll(".font-semibold");
+                for(let i=0;i<fontsemibold.length;i++){
+                    if(fontsemibold[i].textContent.includes("You")){
+                        fontsemibold[i].parentNode.parentNode.querySelector("img").src = "https://pm1.aminoapps.com/6736/3fbaea905ca7aa1b28498ac082f440fe902af8a9v2_hq.jpg"
+                    }
+                }
+                //tên gpt và người dùng
                 var a1 = document.querySelectorAll(".font-semibold")
                 for (var i = 0; i < a1.length; i++) {
                     if (a1[i].textContent.includes("ChatGPT")) {
@@ -74,6 +65,21 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
     }
 })
 
+
+
+    // var background = document.createElement("div");
+    // var img = document.createElement("img");
+    // img.src = "https://i.pinimg.com/736x/66/f5/cf/66f5cf306d1690f29cc465d4e69ecc7f.jpg";
+    // img.alt = "#";
+    // img.style.width = "100vw";
+    // background.appendChild(img);
+    // background.style.opacity = '0.3';
+    // background.style.position = 'fixed';
+    // background.style.width = '100vw';
+    // background.style.height = '100vh';
+    // background.style.top = '0';
+    // background.style.zIndex = '-1';
+    // document.querySelector("body").appendChild(background);
 
 // const e = new KeyboardEvent('keydown', {
 //     bubbles: true,
