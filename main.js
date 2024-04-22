@@ -1,3 +1,5 @@
+document.getElementById("__next").style.fontFamily = "Tahoma";
+
 //name  
 console.log("start");
 var canExec = 0;
