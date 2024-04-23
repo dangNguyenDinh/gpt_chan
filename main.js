@@ -25,6 +25,15 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
         console.log(canExec);
         if (canExec >= 2) {
             setInterval(() => {
+                //message color
+                var messages = document.querySelectorAll(".flex-col .gap-1");
+                for(let i=0;i<messages.length;i++){
+                    messages[i].style.backgroundColor = "pink";
+                    messages[i].style.borderRadius = "10px";
+                    messages[i].style.padding = "5px 10px";
+                }
+
+
                 //background
                 document.querySelectorAll(".h-full")[10].style.backgroundImage = "url('https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg')";
                 document.querySelectorAll(".h-full")[11].style.backgroundSize = "cover";
