@@ -28,12 +28,11 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
                 //message color
                 var messages = document.querySelectorAll(".flex-col .gap-1");
                 for(let i=0;i<messages.length;i++){
-                    messages[i].style.backgroundColor = "pink";
+                    messages[i].style.backgroundColor = "#FDFFF5";
                     messages[i].style.borderRadius = "10px";
-                    messages[i].style.padding = "5px 10px";
+                    messages[i].style.padding = "10px 15px";
+                    messages[i].style.boxShadow = "5px 5px 20px darkgray";
                 }
-
-
                 //background
                 document.querySelectorAll(".h-full")[10].style.backgroundImage = "url('https://i.pinimg.com/originals/5d/7c/c4/5d7cc4c44e0f6fd0c1345bc357c3d14c.jpg')";
                 document.querySelectorAll(".h-full")[11].style.backgroundSize = "cover";
