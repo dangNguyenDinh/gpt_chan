@@ -1,4 +1,3 @@
-document.getElementById("__next").style.fontFamily = "Tahoma";
 
 //name  
 console.log("start");
@@ -11,6 +10,7 @@ document.querySelector("textarea").addEventListener('keydown', (e) => {
     console.log(canExec);
     if (e.key == "Enter") {
         console.log(canExec);
+        document.getElementById("__next").style.fontFamily = "Tahoma";
         if (canExec >= 2) {
             //nút newchat
             var a = document.querySelectorAll("div");
